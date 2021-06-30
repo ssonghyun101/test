@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="100dp"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyle"
+    <TextView
+        android:id="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="650dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="30dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/item_view"
+        tools:text="제목"
         />
 
-    <Button
-        android:id="@+id/add_btn"
+    <TextView
+        android:id="@+id/content"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="일기쓰기"
+        android:textStyle="normal"
+        android:textColor="#B5B5B5"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:text="내용어쩌구어쩌꾸 "
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
