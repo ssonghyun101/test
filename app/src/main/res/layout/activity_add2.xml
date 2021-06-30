@@ -22,12 +22,17 @@
             android:hint="제목"
             app:layout_constraintEnd_toEndOf="@id/parent2"
             app:layout_constraintStart_toStartOf="@id/parent2"
-            app:layout_constraintTop_toTopOf="@id/parent2" />
+            app:layout_constraintTop_toTopOf="@id/parent2"
+            android:privateImeOptions="defaultInputmode=korean"
+            android:inputType="text"
+            />
 
         <EditText
             android:id="@+id/content_input"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:privateImeOptions="defaultInputmode=korean"
+            android:inputType="text"
             android:hint="일기 내용을 입력해주세요"
             app:layout_constraintBottom_toBottomOf="@id/parent2"
             app:layout_constraintEnd_toEndOf="@id/parent2"

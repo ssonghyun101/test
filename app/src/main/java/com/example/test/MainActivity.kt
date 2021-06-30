@@ -22,13 +22,13 @@ class MainActivity : AppCompatActivity() {
         //일기뷰 클릭시
         // 수정 가능하게
         // 에드뷰에 그대로 내용 전달해주는 것
-        val adapter = DiaryAdapter({ diary ->
+        val adapter = DiaryAdapter { diary ->
             val intent = Intent(this, AddActivity2::class.java)
-            intent.putExtra(AddActivity2.EXTRA_TITLE,diary.title)
-            intent.putExtra(AddActivity2.EXTAR_CONTETN,diary.content)
-            intent.putExtra(AddActivity2.EXTRA_ID,diary.id)
+            intent.putExtra(AddActivity2.EXTRA_TITLE, diary.title)
+            intent.putExtra(AddActivity2.EXTAR_CONTETN, diary.content)
+            intent.putExtra(AddActivity2.EXTRA_ID, diary.id)
             startActivity(intent)
-        })
+        }
 
 
         val lm = LinearLayoutManager(this)

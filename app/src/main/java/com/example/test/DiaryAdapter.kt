@@ -42,10 +42,12 @@ class DiaryAdapter(val diaryItemClick : (Diary) -> Unit)
             binding.content.text = diary.content
             binding.title.text = diary.title
 
-            itemView.setOnLongClickListener {
+            binding.edit.setOnClickListener {
                 diaryItemClick(diary)
                 true
             }
+
+
 
 
         }
