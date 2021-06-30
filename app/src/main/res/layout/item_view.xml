@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/paent2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/paent2"
+            app:layout_constraintTop_toTopOf="@+id/paent2"
+            app:layout_constraintEnd_toStartOf="@+id/edit"
+            tools:text="제목" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="#B5B5B5"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/paent2"
+            app:layout_constraintEnd_toEndOf="@+id/paent2"
+            app:layout_constraintStart_toStartOf="@+id/paent2"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            tools:text="내용어쩌구어쩌꾸 " />
+
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="수정"
+            app:layout_constraintEnd_toEndOf="@+id/paent2"
+            app:layout_constraintTop_toTopOf="@+id/paent2"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
